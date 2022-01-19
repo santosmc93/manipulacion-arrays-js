@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Arrays en JS</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const tareas = [
+            {title: 'aprender angular', state: false},
+            {title: 'aprender React', state: false},
+            {title: 'aprender Node', state: false},
+            {title: 'aprender Java', state: false}
+        ];
+        const app = document.getElementById("app");
+        tareas.forEach(tarea => {
+            app.innerHTML += `<li><input id="box" type="checkbox">${tarea.title} - ${tarea.state}</li>`;
+        })
+    </script>
+    
+</body>
+</html>
